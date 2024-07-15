@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Card Access Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 24px;
+        }
+        p {
+            color: #333333;
+            font-size: 16px;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .map-link {
+            color: #007BFF;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Health Card Access Notification</h1>
+        <p>Dear User,</p>
+        <p>We have detected access to health card IDs in the following location:</p>
+        <div class="map-container">
+            <p><a class="map-link" href="https://maps.google.com/?q={{ latitude }},{{ longitude }}" target="_blank">View Location on Google Maps</a></p>
+        </div>
+        <p>If you did not access these health card IDs or believe this activity is suspicious, please contact us immediately.</p>
+        <p>Thank you,<br>Health Card Management Team</p>
+    </div>
+</body>
+</html>
